@@ -115,6 +115,8 @@ public class MainActivity extends AppCompatActivity {
         bexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent in = new Intent(MainActivity.this, Home.class);
+                startActivity(in);
                 finish();
             }
         });

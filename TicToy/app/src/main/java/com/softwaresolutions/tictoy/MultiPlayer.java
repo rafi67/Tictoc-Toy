@@ -114,6 +114,8 @@ public class MultiPlayer extends AppCompatActivity {
         bexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent in = new Intent(MultiPlayer.this, Home.class);
+                startActivity(in);
                 finish();
             }
         });
