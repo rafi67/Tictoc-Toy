@@ -19,6 +19,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View view) {
                 Intent in = new Intent(Home.this, MainActivity.class);
                 startActivity(in);
+                finish();
             }
         });
 
@@ -27,6 +28,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View view) {
                 Intent in = new Intent(Home.this, MultiPlayer.class);
                 startActivity(in);
+                finish();
             }
         });
     }
